@@ -1,13 +1,46 @@
 {
 	"SQL_highlighted_string": {
-	    "prefix": "sql",
+	    "prefix": "hsql",
 	    "body": [
             "\"\"\"",
             "--sql",
-            "${1| ,SELECT,WITH|}",
+            "${0}",
             ";",
             "\"\"\""
 	    ],
 	    "description": "SQL highlighted string"
+    },
+	"HTML_highlighted_string": {
+	    "prefix": "hhtml",
+	    "body": [
+            "\"\"\"",
+            "<!--html-->",
+            "${0}",
+            "<!--!html-->",
+            "\"\"\""
+	    ],
+	    "description": "HTML highlighted string"
+    },
+	"CSS_highlighted_string": {
+	    "prefix": "hcss",
+	    "body": [
+            "\"\"\"",
+            "/*css*/",
+            "${0}",
+            "/*!css*/",
+            "\"\"\""
+	    ],
+	    "description": "CSS highlighted string"
+    },
+	"JS_highlighted_string": {
+	    "prefix": "hjs",
+	    "body": [
+            "\"\"\"",
+            "//js",
+            "${0}",
+            "//!js",
+            "\"\"\""
+	    ],
+	    "description": "Javascript highlighted string"
     }
 }

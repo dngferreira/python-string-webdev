@@ -36,8 +36,8 @@
   },
   "patterns": [
     {
-      "begin": "( *--html| *--beginhtml| *--begin-html)",
-      "end": "( *--\\!html| *--endhtml| *--end-html)",
+      "begin": "^(<!--html-->|<!--beginhtml|<!--begin-html-->)$",
+      "end": "^(<!--!html-->|<!--endhtml-->|<!--end-html-->)$",
       "captures": {
         "1": {
           "name": "variable.parameter"

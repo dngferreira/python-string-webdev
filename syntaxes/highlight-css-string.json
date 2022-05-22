@@ -5,8 +5,8 @@
   "injectionSelector": "L:string.quoted.multi.python, L:meta.fstring.python - (comment.line.number-sign.python, punctuation.definition.comment.python)",
   "patterns": [
     {
-      "begin": "^(--sql|--beginsql|--begin-sql)$",
-      "end": "^( *;|--endsql|--end-sql)$",
+      "begin": "^(\\/\\*css\\*\\/|\\/\\*begincss\\*\\/|\\/\\*begin-css\\*\\/)$",
+      "end": "^(\\/\\*!css\\*\\/|\\/\\*endcss\\*\\/|\\/\\*end-css\\*\\/)$",
       "captures": {
         "1": {
           "name": "variable.parameter"
@@ -14,10 +14,10 @@
       },
       "patterns": [
         {
-          "include": "source.sql"
+          "include": "source.css"
         }
       ]
     }
   ],
-  "scopeName": "python-sql.injection"
+  "scopeName": "python-css.injection"
 }
